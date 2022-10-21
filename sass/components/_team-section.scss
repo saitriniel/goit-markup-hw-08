@@ -1,0 +1,46 @@
+.team-section {
+    background-color: var(--secondary-background-color-light);
+}
+
+.member-card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &__text {
+        @extend %team-card;
+        color: var(--secondary-text-color-theme-light);
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        @extend %team-card;
+        font-weight: 500;
+
+        margin-bottom: 10px;
+    }
+
+    &__meta {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @media (max-width: 767px) {
+            padding-bottom: 24px;
+        }
+    }
+}
+
+.team-section__item {
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 30px) / 2);
+
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
+    }
+}

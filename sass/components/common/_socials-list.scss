@@ -1,0 +1,39 @@
+.socials-list {
+    display: flex;
+    justify-content: center;
+
+    &__icon {
+    fill: currentColor;
+    }
+}
+
+.socials-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials-list__link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+
+    &--section {
+        color: #AFB1B8;
+        background-color: var(--primary-background-color-light);   
+    }
+
+    &--footer {
+        color: var(--primary-text-color-theme-dark);
+        background-color: rgba(255, 255, 255, 0.1); 
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--primary-accent-color);
+        color: var(--primary-background-color-light);
+    }
+}
+

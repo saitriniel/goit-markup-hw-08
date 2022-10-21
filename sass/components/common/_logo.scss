@@ -1,0 +1,42 @@
+.logo {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    line-height: 1.16;
+
+    &--accent {
+    color: var(--primary-accent-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.header__logo {
+    display: inline-block;
+    color: var(--secondary-accent-color);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 87px;            
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;            
+    }
+}
+
+.footer__logo {
+    color: var(--primary-text-color-theme-dark);
+
+    display: inline-block;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
